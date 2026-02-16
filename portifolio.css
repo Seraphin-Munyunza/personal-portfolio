@@ -1,0 +1,359 @@
+/* =========================
+   RESET & VARIABLES
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+:root {
+  --bg-colorB:#dde3df;
+  --bg-color: whitesmoke;
+  --bg-color-2: rgb(218, 215, 215);
+  --text-color: #333;
+  --text-color-2: #111;
+  --text-color-3: #222;
+  --link-color: #3a7afe;
+  --link-color2: #255eea;
+}
+
+[data-theme="dark"] {
+  --bg-colorB:#343835;
+  --bg-color: #1e293d;
+  --bg-color-2: #4a5b7d;
+  --text-color: #9aa4b2;
+  --text-color-2: whitesmoke;
+  --text-color-3: #f0ecec;
+  --link-color: #5c6bc0;
+  --link-color2:#394aaa;
+}
+body{
+  background-color: var(--bg-colorB);
+  color: var(--text-color-3);
+}
+/* ========================
+   HEADER & NAV
+========================= */
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--link-color);
+  padding: 10px;
+  margin-left: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-section {
+  background-color: var(--bg-color);
+  padding: 100px 20px 80px;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Hero Text */
+.hero-badge {
+  display: inline-block;
+  background-color: #e8f0ff;
+  color: var(--link-color);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--text-color-2);
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  max-width: 520px;
+  line-height: 1.7;
+  color: var(--text-color);
+  margin-bottom: 35px;
+}
+
+/* Hero Buttons */
+.hero-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  background-color: var(--link-color);
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 2px solid var(--link-color);
+  color: var(--link-color);
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--link-color);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Hero Visual */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  width: 280px;
+  height: 360px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.profile-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+.skills-section {
+  background-color: var(--bg-color);
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--text-color-3);
+}
+
+.cards-container {
+  display: grid;
+  
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  width: 300px;
+  background-color: var(--bg-color-2);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-image {
+  
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #eef1f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  ;
+}
+
+.card-image img {
+   max-width: 100%;
+  height: 100%; 
+  /* object-fit: contain; */
+  object-fit:cover;
+  display: block;
+}
+
+.card-content {
+  
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--text-color-2);
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+/* =========================
+   PROCESS SECTION
+========================= */
+.process-section {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  text-align: center;
+  background-color: var(--bg-color-2);
+  
+}
+
+.section-subtitle {
+  max-width: 600px;
+  margin: 15px auto 50px;
+  color: var(--text-color-2);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.process-card {
+  background: linear-gradient(145deg, var(--bg-color), var(--bg-color-2));
+  border-radius: 16px;
+  padding: 40px 25px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-10px);
+}
+
+.step-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--link-color);
+  margin-bottom: 15px;
+}
+
+.process-card h3 {
+  color: var(--text-color-3);
+  margin-bottom: 12px;
+}
+
+.process-card p {
+  color:var(--text-color-2);
+  line-height: 1.6;
+}
+
+/* =========================
+   CTA SECTION
+========================= */
+.cta-section {
+  background: linear-gradient(135deg,var(--link-color2), var(--link-color));
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.cta-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cta-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-secondary {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #fff;
+  color: #255eea;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-actions,
+  .cta-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: none;
+  }
+
+  .cards-container,
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,10 +1,4 @@
-// const nightMode = document.querySelector("#mode");
-// const body = document.querySelector("body");
-// console.log(body.style.color);
-// nightMode.addEventListener("click", () => {
-//   body.style.backgroundColor = "grey";
-//   body.style.color = "white";
-// });
+
 
 // change the theme
 const modeChanger = document.querySelector("#themeToggle")
